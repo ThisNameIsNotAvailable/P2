@@ -230,7 +230,6 @@ void zad5() {
     fprintf(fr, "%f", num / count);
     fclose(fr);
     
-//    /Users/alexeyvalevich/Desktop/University/Xcode/C++/zestaw5/zestaw5/
 }
 
 void zad6() {
