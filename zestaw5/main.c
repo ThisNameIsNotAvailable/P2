@@ -130,10 +130,11 @@ void zad4(){
     }
     fgets(buffer, sizeof(buffer), stdin);
     if((buffer[0] >= 65 && buffer[0] <= 90) || (buffer[0] >= 97 && buffer[0] <= 122)) {
-        for(int i = 0; i < 49 && (buffer[i] != 10 || buffer[i] != 0); i++) {
+        for(int i = 0; i < 48 && (buffer[i] != 10); i++) {
             if(50 - i > 2) {
                 if(number(buffer[i]) < number(buffer[i + 2])){
                     printf("Niepoprawne wejście\n");
+                    break;
                 }
             }
             
